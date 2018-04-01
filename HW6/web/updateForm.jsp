@@ -1,8 +1,3 @@
-<%-- 
-    Document   : updateForm
-    Created on : Mar 31, 2018, 3:26:49 PM
-    Author     : kzhou8
---%>
 
 <%@page import="model.Countries"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

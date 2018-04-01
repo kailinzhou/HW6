@@ -46,7 +46,7 @@ public class SearchQuery {
     }
     public void doSearch(String countryName){
         try {
-            String query="SELECT * FROM COUNTRIES WHERE UPPER(FRIENDNAME) LIKE ?";
+            String query="SELECT * FROM countries WHERE UPPER(countryNAME) LIKE ?";
             PreparedStatement ps=conn.prepareStatement(query);
             ps.setString(1, "%"+countryName.toUpperCase()+"%");
             this.results=ps.executeQuery();

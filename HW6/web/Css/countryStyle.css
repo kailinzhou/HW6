@@ -1,5 +1,17 @@
 body{background-color:#D2B48C;}
+.wrap{text-aligh:center;width:90%;margin:0 auto; border:1px solid black; margin-top:25px;}
+.header{text-align:left;padding:25px;}
+.headerImg{float:left;width:200px;}
+.headerText{float:leff;height:105px; padding-top:50px; padding-left:25px;}
 h1{color:#696969}
+.navcontainer{margin-left:30px;text-align:left;}
+.navlist{list-style:none;padding:0;margin:0;}
+.navlist li{display:inline; padding:0;margin:0;}
+.navlist li:before{content:"| ";}
+.navlist li:first-child:before{content:"| ";}
+
+    
+
 .add{
     border: solid 2px black;
     text-align: center;

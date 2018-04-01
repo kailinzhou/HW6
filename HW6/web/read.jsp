@@ -23,6 +23,7 @@
                 <th>Region</th>
 
                 <th>Language</th>
+                <th> Update</th>
                 <th> Delete</th>
             </tr>
         </table>

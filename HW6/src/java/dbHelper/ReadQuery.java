@@ -12,6 +12,8 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Countries;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 /**
  *
@@ -35,21 +37,21 @@ public class ReadQuery {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
     
-    String driver = props.getProperty("driver.name");
-    String ur1=props.getProperty("server.name");
-    String username=props.getProperty("user.name");
-    String password =props.getProperty("user.password");
+        String driver = props.getProperty("driver.name");
+        String url=props.getProperty("server.name");
+        String username=props.getProperty("user.name");
+        String password =props.getProperty("user.password");
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
-            conn=DriverManager.getConnection(ur1,username,password);
+            conn=DriverManager.getConnection(url,username,password);
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-    
+     
     }
     public void doRead(){
         try {
@@ -94,8 +96,12 @@ public class ReadQuery {
                 table+="</td>";
                 
                 table+="<td>";
-                table+= "<a href=update?countryID="+country.getCountryID()+">Update </a>"+" <a href=delete?countryID="+country.getCountryID()+">Delete</a>";
+                table+= "<a href=update?countryID="+country.getCountryID()+">Update </a>";
                 table+="</td>";
+                table+="<td>";
+                table+=" <a href=delete?countryID="+country.getCountryID()+">Delete</a>";
+                table+="</td>";
+                        
                 table+="</tr>";
                 
             }

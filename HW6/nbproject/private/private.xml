@@ -3,17 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/dbHelper/ReadQuery.java</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/model/Countries.java</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/controller/Read.java</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/dbHelper/SearchQuery.java</file>
             <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/web/index.jsp</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/dbHelper/ReadRecord.java</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/controller/SearchServlet.java</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/web/updateForm.jsp</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/src/java/controller/UpdateServlet.java</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/web/add.jsp</file>
-            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/web/search.jsp</file>
+            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/web/includes/header.jsp</file>
+            <file>file:/C:/Users/kzhou8/Desktop/HW6/HW6/web/Css/countryStyle.css</file>
         </group>
     </open-files>
 </project-private>

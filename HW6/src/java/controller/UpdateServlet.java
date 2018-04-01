@@ -5,7 +5,8 @@
  */
 package controller;
 
-import dbhelper.UpdateQuery;
+
+import dbHelper.UpdateQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -86,11 +87,12 @@ public class UpdateServlet extends HttpServlet {
        country.setPopulation(population);
        country.setRegion(region);
        country.setCountryLanguage(language);
-       UpdateQuery uq=new UpdateQuery();
-       uq.doUpdate(country);
-       String url="/read";
-       RequestDispatcher dispatcher=request.getRequestDispatcher(url);
-       dispatcher.forward(request,response);
+       UpdateQuery uq = new UpdateQuery();
+        uq.doUpdate(country);
+       String url = "/read";
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        dispatcher.forward(request,response);
+        
     }
     
 

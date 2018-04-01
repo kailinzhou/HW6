@@ -62,7 +62,7 @@ public class UpdateFormServlet extends HttpServlet {
             throws ServletException, IOException {
             
             //pass execution on to doPost
-            doPost(request, response);
+             doPost(request, response);
             
     }
 

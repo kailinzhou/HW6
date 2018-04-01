@@ -60,7 +60,8 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            doPost(request,response);
+            
+            doPost(request, response);
     }
 
     /**
@@ -74,16 +75,21 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String countryName=request.getParameter("searchVal");
-        SearchQuery sq=new SearchQuery();
-        sq.doSearch(countryName);
-        String table=sq.getHTMLTable();
-        request.setAttribute("table", table);
-        String url="/read.jsp";
         
-        RequestDispatcher dispatcher=request.getRequestDispatcher(url);
-        dispatcher.forward(request,response);
-        
+            // get text to search
+            String CARNAME = request.getParameter("searchVal");
+            // create a searchquery helper pbject
+            SearchQuery sq = new SearchQuery();
+            //get HTML table from the searchquery object
+            sq.doSearch(CARNAME);
+            String table = sq.getHTMLTable();
+            //pass exection control to read.jsp along with the table
+            request.setAttribute("table", table);
+            String url = "/read.jsp";
+            
+            RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+            
     }
 
     /**

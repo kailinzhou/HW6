@@ -8,9 +8,12 @@
         <title>Countries</title>
     </head>
     <body>
+        <div class="wrap">
+            <%@include file="includes/header.jsp" %>
         <h1>Countries Database</h1>
         <a href="read">View All Countries</a>
         <br><br>
         <a href="search.jsp">Search Countries</a>
+        </div>
     </body>
 </html>
