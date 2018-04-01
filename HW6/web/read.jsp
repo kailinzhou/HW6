@@ -32,6 +32,8 @@
         <br><br>
         <div class="add">
         <a href="add">Add A New Country</a>
+        <br><br>
+         <a href="search.jsp">Search Countries</a>
         </div>
        </div>
         </body>   

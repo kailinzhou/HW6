@@ -58,7 +58,7 @@ public class UpdateQuery {
             String query="UPDATE countries SET countryname =?, population=?,region=?,countryLanguage=? WHERE countryID=?";
             PreparedStatement ps=conn.prepareStatement(query);
     
-             ps.setString(1,country.getCountryName());
+            ps.setString(1,country.getCountryName());
             ps.setInt(2, country.getPopulation());
             ps.setString(3,country.getRegion());
             ps.setString(4,country.getCountryLanguage()); 
