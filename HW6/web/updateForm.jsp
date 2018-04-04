@@ -6,11 +6,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <link rel="stylesheet" type="text/css" href="./Css/countryStyle.css">
+         <link rel="stylesheet" type="text/css" href="countryStyle.css">
         <title>Update a Country</title>
     </head>
     <body>
-          <div class="database"style="text-aligh:center">
+         <div class="wrap">
+           <div class = "headerImg">
+			<img src="includes/country.jfif" height="150px" />
+		</div>
+        <%@ include file="includes/header.jsp" %>   
+        <br><br>    
+        <%@ include file="includes/menu.jsp" %>
+        
+        <div class="main">
         <h1>Update A New Country</h1>
         <hr>
         <form name="updateForm" action="updateCountry" method="get"> 
@@ -43,6 +51,8 @@
                     <input type="reset" name="reset" value="Clear" />
             <input type="submit" name="submit" value="Update" />
         </form>
-      <a href="read">Return</a>
+        </div>
+                            <%@ include file="includes/footer.jsp" %>
+         </div>
     </body>
 </html>

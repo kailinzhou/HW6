@@ -4,12 +4,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="./Css/countryStyle.css">
+        <link rel="stylesheet" type="text/css" href="countryStyle.css">
         <title>Country Database</title>
     </head>
     <% String table=(String) request.getAttribute("table");%>
     <body>
-       <div class="database"style="text-aligh:center">
+       <div class="wrap">
+           <div class = "headerImg">
+			<img src="includes/country.jfif" height="150px" />
+		</div>
+        <%@ include file="includes/header.jsp" %>   
+        <br><br>    
+        <%@ include file="includes/menu.jsp" %>
+        
+        <div class="main">
         <h1>My Country Database</h1>
          <hr>
         <table id="header">
@@ -31,11 +39,10 @@
         <%=table %>
         </table>
         <br><br>
-        <div class="add">
-        <a href="add">Add A New Country</a>
-        <br><br>
-         <a href="search.jsp">Search Countries</a>
         </div>
+            <%@ include file="includes/footer.jsp" %>
        </div>
+
+     
         </body>   
 </html>

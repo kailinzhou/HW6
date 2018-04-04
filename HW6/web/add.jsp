@@ -9,11 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="./Css/countryStyle.css">
+        <link rel="stylesheet" type="text/css" href="countryStyle.css">
         <title>Add A New Country</title>
     </head>
     <body>
-        <div class="database"style="text-aligh:center">
+       <div class="wrap">
+           <div class = "headerImg">
+			<img src="includes/country.jfif" height="150px" />
+		</div>
+        <%@ include file="includes/header.jsp" %>   
+        <br><br>    
+        <%@ include file="includes/menu.jsp" %>
+        <div class="main">
         <h1>Add A New Country</h1>
         <hr>
         <form name="addForm" action="addCountry" method="get"> 
@@ -31,6 +38,8 @@
             <br>
             <input type="submit" name="submit" value="Submit"/>
         </form>
-      <a href="read">Return</a>
+        </div>
+            <%@ include file="includes/footer.jsp" %>
+      </div>
     </body>
 </html>

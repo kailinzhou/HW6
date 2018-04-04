@@ -4,16 +4,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="./Css/countryStyle.css">
+        <link rel="stylesheet" type="text/css" href="countryStyle.css">
         <title>Countries</title>
     </head>
     <body>
         <div class="wrap">
-            <%@include file="includes/header.jsp" %>
-        <h1>Countries Database</h1>
-        <a href="read">View All Countries</a>
-        <br><br>
-        <a href="search.jsp">Search Countries</a>
+            <div class = "headerImg">
+			<img src="includes/country.jfif" height="150px" />
+		</div>
+            <%@ include file="includes/header.jsp" %>
+            <br><br>
+            <%@ include file="includes/menu.jsp" %>
+            <div class="main">
+                <h1> My Countries Database</h1>
+                 <hr>
+                "This is Kailin Zhou's collections of countries"                    
+            </div>
+            <%@ include file="includes/footer.jsp" %>
         </div>
     </body>
 </html>
